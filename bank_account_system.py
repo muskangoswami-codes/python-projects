@@ -11,7 +11,11 @@ class account:
     def show_balance(self):
         print("balance:",self.balance)
 
-acc = account(50000)
-acc.deposit(10000)
-acc.withdraw(4500)
+amount=int(input("enetr the amount:"))
+deposit_amount=int(input("enter the deposit amount:"))
+withdraw_amount=int(input("enter the withdraw amount:"))
+
+acc = account(amount)
+acc.deposit(deposit_amount)
+acc.withdraw(withdraw_amount)
 acc.show_balance()
